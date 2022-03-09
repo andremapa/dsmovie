@@ -6,6 +6,8 @@
     --white: #fff;
     --text-gray: #4a4a4a;
     --text-light-gray: #aaa;
+    --star-yellow: #FFBB3A;
+
 }
 
 *{
@@ -81,7 +83,7 @@ a, a:hover{
     align-items: center;
     justify-content:  space-between;
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px;
 }
 
 .dsmovie-card-description h3{
@@ -91,8 +93,32 @@ a, a:hover{
     text-align: center;
 }
 
+.dsmovie-card-description-bottom img{
+    max-width: 22px;
+}
+
+.dsmovie-card-description-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.dsmovie-card-description-bottom h4{
+    color: var(--star-yellow);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dsmovie-card-description-bottom p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-light-gray);
+    margin-bottom: 10px;
+}
+
 .dsmovie-btn, .dsmovie-btn:hover{
-    width: 70%;
+    width: 180px;
     height: 40px;
     background-color: var(--color-primary);
     color: var(--white);
